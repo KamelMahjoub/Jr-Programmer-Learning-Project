@@ -658,26 +658,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 726303185}
-  - component: {fileID: 726303184}
+  - component: {fileID: 726303186}
   m_Layer: 0
-  m_Name: MenuManager
+  m_Name: MainManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &726303184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726303183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74e0e5e50dd4fa8448c18cc1d3856b10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &726303185
 Transform:
   m_ObjectHideFlags: 0
@@ -692,6 +680,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &726303186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726303183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ed640304b75de4887d658a2619767e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TeamColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &880417512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,7 +1388,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1960852281}
         m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
-        m_MethodName: LoadColorCliked
+        m_MethodName: LoadColorClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
